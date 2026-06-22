@@ -1,61 +1,7 @@
-# Task 4 - Security Enhancements
-
-## Project Overview
-
-This project is a Secure Blog Application developed using PHP and MySQL. It includes user authentication, CRUD operations, and security features to protect user data and prevent common web attacks.
-
-## Features
-
-* User Registration
-* User Login & Logout
-* Password Hashing
-* Create Blog Posts
-* Read Blog Posts
-* Update Blog Posts
-* Delete Blog Posts
-* Role-Based Access Control (Admin/User)
-* SQL Injection Prevention using Prepared Statements
-* XSS Protection using htmlspecialchars()
-
-## Technologies Used
-
-* PHP
-* MySQL
-* HTML
-* CSS
-* XAMPP
-* Git & GitHub
-
-## Database
-
-Database Name:
-blog_project
-
-Tables:
-
-1. users
-2. posts
-
-## Installation Steps
-
-1. Start Apache and MySQL in XAMPP.
-2. Create the database `blog_project`.
-3. Import the SQL file.
-4. Copy the project folder to `htdocs`.
-5. Open:
-   http://localhost/task4_security_blog/register.php
-6. Register a user account.
-7. Login and manage blog posts.
-
-## Security Features Implemented
-
-* Password Hashing using `password_hash()`
-* Password Verification using `password_verify()`
-* Prepared Statements for database queries
-* XSS Protection using `htmlspecialchars()`
-* Role-Based Access Control
-
-
-## Internship
-
-ApexPlanet Software Pvt Ltd Internship - Task 4
+Features:
+- User Registration & Login
+- CRUD Operations
+- Search Functionality
+- Pagination
+- Session Management
+- Security Enhancements

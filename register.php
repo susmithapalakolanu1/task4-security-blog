@@ -8,6 +8,19 @@ $password = password_hash(
 $_POST['password'],
 PASSWORD_DEFAULT
 );
+$check = $conn->prepare(
+"SELECT id FROM users WHERE username=?"
+);
+
+$check->bind_param("s", $username);
+$check->execute();
+
+$result = $check->get_result();
+
+if($result->num_rows > 0)
+{
+    die("Username already exists. Try another username.");
+}
 
 $stmt = $conn->prepare(
 "INSERT INTO users(username,password)
